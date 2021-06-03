@@ -6,7 +6,7 @@ from flask import request, redirect, render_template, url_for
 from flask import Response
 
 app = Flask(__name__)
-app.redis = redis.StrictRedis(host='redis', port=6379, db=0)
+app.redis = redis.StrictRedis(host='redis-follower', port=6379, db=0)
 
 # Be super aggressive about saving for the development environment.
 # This says save every second if there is at least 1 change.  If you use
