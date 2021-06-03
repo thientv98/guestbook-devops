@@ -46,4 +46,4 @@ spec:
         - containerPort: 6379
         env:
         - name: ALLOW_EMPTY_PASSWORD
-          value: yes
+          value: "yes"
