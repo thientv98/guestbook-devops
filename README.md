@@ -8,5 +8,11 @@
 - gcloud auth login
 - gcloud config set project devops-315509
 - gcloud auth configure-docker
-- docker tag guestbook-main_app gcr.io/do-bt/guestbook-main_app:latest
-- docker push gcr.io/devops-315509/guestbook-main_app
+- docker tag guestbook-main_app gcr.io/devops-315509/guestbook-main_app:v1
+- docker push gcr.io/devops-315509/guestbook-main_app:v1
+
+- kubectl apply -f app.yaml
+- kubectl get pods
+- kubectl get service
+- k get pods frontend-5bd556cb45-8cgsj -o yaml
+- kubectl logs deployment/frontend
